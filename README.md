@@ -15,9 +15,9 @@ Distributed/Decentralized version control system (DVCS). : we can work locallyon
 
 | Command | Description |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
-| git status | List all new or modified files |
+| git init | creates the empty new repository which contains all the plumbing |
+| git commit | will save save your changes later that we can push remote reposistory it 's like snapshot of entire project |
+| git git remote add origin url | will add the new  remote  Before adding the remote you have to create the required repository in your git service |
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
