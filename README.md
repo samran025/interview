@@ -27,6 +27,8 @@ root@kali2:~/git_training/.git# cat config
 
 creates an empty repository and is not linked to any remote repository
 
+| Command | Description |
+| --- | --- |
 | git commit | will save save your changes later that we can push remote reposistory it 's like snapshot of entire project |
 | git git remote add origin url | will add the new  remote  Before adding the remote you have to create the required repository in your git service |
 
@@ -41,7 +43,8 @@ root@kali2:~/git_training/.git# cat config
         url = https://github.com/samran025/test.git
         fetch = +refs/heads/*:refs/remotes/origin/*
 
-
+| Command | Description |
+| --- | --- |
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
