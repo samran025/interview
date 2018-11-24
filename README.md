@@ -16,8 +16,32 @@ Distributed/Decentralized version control system (DVCS). : we can work locallyon
 | Command | Description |
 | --- | --- |
 | git init | creates the empty new repository which contains all the plumbing |
+
+
+root@kali2:~/git_training/.git# cat config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+
+creates an empty repository and is not linked to any remote repository
+
 | git commit | will save save your changes later that we can push remote reposistory it 's like snapshot of entire project |
 | git git remote add origin url | will add the new  remote  Before adding the remote you have to create the required repository in your git service |
+
+
+root@kali2:~/git_training/.git# cat config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = https://github.com/samran025/test.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
