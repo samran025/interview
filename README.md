@@ -11,3 +11,9 @@ track history of the work
 Following are the types of VCS:
 Centralized version control system (CVCS). : connect to internet
 Distributed/Decentralized version control system (DVCS). : we can work locallyonce done we can push our code remotely
+
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
