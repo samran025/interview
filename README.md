@@ -15,7 +15,7 @@ Distributed/Decentralized version control system (DVCS). : we can work locallyon
 
 | Command | Description |
 | --- | --- |
-| git init | creates the empty new repository which contains all the plumbing |
+| git init | creates the empty new repository which contains all the plumbing and won't create the branch untill commit |
 
 
 root@kali2:~/git_training/.git# cat config
@@ -45,7 +45,17 @@ root@kali2:~/git_training/.git# cat config
 
 | Command | Description |
 | --- | --- |
-| git diff | Show file differences that haven't been staged |
+| git config --global user.name "  " | saves the config in $HOME/.gitconfig |
+
+root@kali2:~# cat .gitconfig
+
+[user]
+
+        name = samran025
+
+
+| Command | Description |
+| --- | --- |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
