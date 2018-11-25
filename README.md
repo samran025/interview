@@ -76,6 +76,25 @@ root@kali2:~# cat .gitconfig
 | git push --set-upstream remote_name "branch_name" | creats a branch in remote repo |
 
 
+
+| Command | Description |
+| --- | --- |
+| git add . | stage the file |
+| git rm . | remove the file from remote |
+
+
+Gitingonre
+
+we can use .gitingonre : the files and directory that we don't want to share
+files conatining : passwords,login info ,conf
+
+When a file or directory is ignored, it will not be:
+1. tracked by Git
+2. reported by commands such as git status or git diff
+3. staged with commands such as git add -A
+
+
+
 | Command | Description |
 | --- | --- |
 | git status | List all new or modified files |
