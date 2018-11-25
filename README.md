@@ -93,6 +93,8 @@ When a file or directory is ignored, it will not be:
 2. reported by commands such as git status or git diff
 3. staged with commands such as git add -A
 
+by adding in .gitignore
+or .git/info/exclude
 
 
 | Command | Description |
