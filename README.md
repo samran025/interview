@@ -46,6 +46,9 @@ root@kali2:~/git_training/.git# cat config
 | Command | Description |
 | --- | --- |
 | git config --global user.name "  " | saves the config in $HOME/.gitconfig |
+| git config --global alias.c "clone url" | aliasing the command and saves the config in $HOME/.gitconfig |
+| git config  user.name "  " | saves the config in $GITDIR/.gitconfig |
+
 
 root@kali2:~# cat .gitconfig
 
@@ -86,3 +89,31 @@ root@kali2:~# cat .gitconfig
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
+
+root@kali2:~/git_training/interview# git shortlog -s
+
+     3  root
+     4  samran025
+
+
+root@kali2:~/git_training/interview# git shortlog
+root (3):
+      command
+      command2
+      command3
+
+samran025 (4):
+      Create README.md
+      Update README.md
+      b
+      bb
+      
+
+root@kali2:~/git_training/interview# git log -2 --oneline
+46174e5 bb
+f228c68 b
+
+
+
+git log master..foo will show the commits that are on foo and not on master. Helpful for seeing what commits
+you've added since branching!
