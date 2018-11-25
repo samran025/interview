@@ -72,6 +72,12 @@ root@kali2:~# cat .gitconfig
 
 | Command | Description |
 | --- | --- |
+| git checkout -b "branch_name" | creates a branch |
+| git push --set-upstream remote_name "branch_name" | creats a branch in remote repo |
+
+
+| Command | Description |
+| --- | --- |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
 | git status | List all new or modified files |
