@@ -157,3 +157,45 @@ f228c68 b
 
 git log master..foo will show the commits that are on foo and not on master. Helpful for seeing what commits
 you've added since branching!
+
+
+Clear already committed files, but included in .gitignore
+root@kali2:~/git_training/test# echo "README.md" >.gitignore
+root@kali2:~/git_training/test# git status
+# On branch git
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README.md
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       .gitignore
+no changes added to commit (use "git add" and/or "git commit -a")
+
+root@kali2:~/git_training/test# git rm -r --cached .
+rm 'README.md'
+rm 'a.xls'
+rm 'cmd.csv'
+rm 'tests-example.xls'
+root@kali2:~/git_training/test# ls
+a.xls  cmd.csv  README.md  tests-example.xls
+root@kali2:~/git_training/test# git status
+# On branch git
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       deleted:    README.md
+#       deleted:    a.xls
+#       deleted:    cmd.csv
+#       deleted:    tests-example.xls
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       .gitignore
+#       a.xls
+#       cmd.csv
+#       tests-example.xls
