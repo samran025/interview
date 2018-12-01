@@ -199,3 +199,7 @@ root@kali2:~/git_training/test# git status
 #       a.xls
 #       cmd.csv
 #       tests-example.xls
+        
+To fix this problem, one could perform a "dry-run" removal of everything in the repository, followed by re-adding all
+the files back. As long as you don't have pending changes and the --cached parameter is passed, this command is
+fairly safe to run
