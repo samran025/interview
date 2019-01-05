@@ -1,0 +1,6 @@
+Splunk is a montoring tool
+
+1) forwarder: that runs on application server and the job of the forwarder is to send the log to the indexer(or splunk serer) for timestaming or 
+braekdown into events 
+2) indexer: parser the log into the events
+3) search and reporting is used how you want to visualise the log
